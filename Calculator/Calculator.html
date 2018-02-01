@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width scale=1">
+    <script type="text/javascript" src="Calculator.js"></script>
+</head>
+<body>
+	<p id="demo"></p>
+	<table border="1px solid black" class="table" style="width: 200px; margin-left: 550px; margin-top: 100px;">
+		<thead>
+		<th colspan="4">
+			<div class="form-group">
+			<input type="text" name="text" id="number" value="0" class="form-control" disabled>
+		</div>
+		</th>
+		<tr>
+		<th colspan="4">
+			<div class="form-group">
+			<input type="text" name="text" id="result" value="0" class="form-control" disabled>
+		</div>
+		</th>
+		</thead>
+		<tbody>
+	</tr>
+		<tr>
+			<td>
+				<button onclick="cut()" class="btn btn-default" style="width: 100%">C</button>
+			</td>
+			<td>
+				<button onclick="div()" class="btn btn-default" style="width: 100%">/</button>
+			</td>
+			<td>
+				<button onclick="mul()" class="btn btn-default" style="width: 100%">*</button>
+			</td>
+			<td>
+				<button onclick="minus()" class="btn btn-default" style="width: 100%">-</button>
+			</td> 
+		</tr>
+		<tr>
+			<td>
+				<button onclick="seven()" class="btn btn-default" style="width: 100%">7</button>
+			</td>
+			<td>
+				<button onclick="eight()" class="btn btn-default" style="width: 100%">8</button>
+			</td>
+			<td>
+				<button onclick="nine()" class="btn btn-default" style="width: 100%">9</button>
+			</td>
+			<td rowspan="2">
+				<button  onclick="plus()" class="btn btn-default" style="width: 100%; height: 80px">+</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button onclick="four()" class="btn btn-default" style="width: 100%">4</button>
+			</td>
+			<td>
+				<button onclick="five()" class="btn btn-default" style="width: 100%">5</button>
+			</td>
+			<td>
+				<button onclick="six()" class="btn btn-default" style="width: 100%">6</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button onclick="one()" class="btn btn-default" style="width: 100%">1</button>
+			</td>
+			<td>
+				<button onclick="two()" class="btn btn-default" style="width: 100%">2</button>
+			</td>
+			<td>
+				<button onclick="three()" class="btn btn-default" style="width: 100%">3</button>
+			</td>
+			<td rowspan="2">
+				<button onclick="equals()" class="btn btn-default" style="width: 100%; height: 80px;">=</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button onclick="zero()" class="btn btn-default" style="width: 100%">0</button>
+			</td>
+			<td>
+				<button onclick="decimal()" class="btn btn-default" style="width: 100%">.</button>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
